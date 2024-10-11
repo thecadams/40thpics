@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Chris and Emma&#x27;s 40th Photos - Home</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">Chris and Emma&#x27;s 40th Photos</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>
+      </nav>
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums">
+    <a href="Josh-Sharmans-Pics.html" style="background-image: url('media/small/Josh%20Sharman%27s%20Pics/Chris_%2040th-200.jpg')">
+            <div class="info">
+              <h3>Josh Sharman&#x27;s Pics</h3>
+              <div class="summary">198 photos</div>
+              <div class="date">28 Sep 2024 - 28 Sep 2024</div>
+            </div>
+          </a><a href="Adam-Leos-Pics.html" style="background-image: url('media/small/Adam%20Leo%27s%20Pics/DSC_1487.JPG')">
+            <div class="info">
+              <h3>Adam Leo&#x27;s Pics</h3>
+              <div class="summary">184 photos</div>
+              <div class="date">28 Sep 2024 - 28 Sep 2024</div>
+            </div>
+          </a>  </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix">
+      </ul>
+    
+      <!--
+        Pagination
+      -->
+    
+      <!--
+        Zip file link
+      -->
+    
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p><p>Original galleries:</p><ul style="list-style: inside"><li><a href="https://photos.google.com/share/AF1QipNHwzZQgsGFTpjtFWq0ggyjqJrsxY68P3SEX-nIB-DIA2BMkxmfn-IbbOq6pbgH3Q?key=dnIwRHpjZzJJUHNpVFhzU1JWTi1YWjVLNFRSWFBn" target="_blank">Josh Sharman's Pics - Google Photos</a></li><li><a href="http://dropbox.com/scl/fo/dxzrc2nmwqjfzznr874xi/AJMQebDPN287KUX1L99MlPo?rlkey=aic3w1pcn9h7r4cglzayvtu7a&e=1&st=xn9xtugo&dl=0" target="_blank">Adam Leo's Photos - Dropbox</a></li></ul><p style="padding-top: 1rem">Photographers' Instagram pages - make sure to follow &amp; slide into their DMs!</p><ul style="list-style: inside"><li><a href="https://instagram.com/josh.sharman" target="_blank">Josh Sharman</a></li><li><a href="https://www.instagram.com/tkleophoto" target="_blank">Adam Leo</a></li></ul></p>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
